@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Powereye</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="procesando">Procesando…</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="aceptar">Aceptar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">Info</string>
+</resources>
