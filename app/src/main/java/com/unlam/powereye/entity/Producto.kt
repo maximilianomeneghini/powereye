@@ -5,10 +5,10 @@ import android.os.Parcelable
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-class Producto(cantidadVistas: Int, precio: Double, nombre: String) :
+class Producto(cantidadVistas: Int, precio: Double?, nombre: String) :
     Parcelable {
     var cantidadVistas: Int
-    var precio: Double
+    var precio: Double?
     var nombre: String
     init {
         this.cantidadVistas = cantidadVistas
@@ -26,7 +26,7 @@ class Producto(cantidadVistas: Int, precio: Double, nombre: String) :
 
     override fun writeToParcel(dest: Parcel, flags: Int) = with(dest) {
         writeInt(cantidadVistas)
-        writeDouble(precio)
+        writeDouble(precio!!)
         writeString(nombre)
     }
 
